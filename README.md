@@ -15,5 +15,5 @@ psql
 ```
 4- Run sql script
 ```
-\i /tmp/bd_resaeu_acteur.sql
+\i /tmp/bd_reseau_acteur.sql
 ```
