@@ -26,11 +26,9 @@ SET default_with_oids = false;
 -- Grant --
 -----------
 
--- Necessaire ?
 
 GRANT ALL ON SCHEMA sch_reseau_acteur_trad to crea;
--- GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA sch_reseau_acteur_trad to crea;
--- GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA sch_reseau_acteur to crea;
+
 
 ------------
 -- Tables --
@@ -230,3 +228,13 @@ ALTER TABLE ONLY sch_reseau_acteur_trad.t_sites_translations
     ADD CONSTRAINT fk_t_sites_translations_code_language FOREIGN KEY (code_language) REFERENCES sch_reseau_acteur_trad.t_languages (code_language);
 ALTER TABLE ONLY sch_reseau_acteur_trad.t_sites_translations
   ADD CONSTRAINT  fk_t_sites_translations_id_sites FOREIGN KEY (id_sites) REFERENCES sch_reseau_acteur.t_sites (id_sites);
+
+
+
+-----------
+-- Grant --
+-----------
+
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA sch_reseau_acteur_trad to crea;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA sch_reseau_acteur to crea;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA sch_reseau_acteur_trad to crea;
