@@ -3,7 +3,7 @@
 ## CREATE DATABASE AND SCHEMA
 1- Copy sql file in tmp folder
 ```
-cp data/bd_reseau_acteur.sql /tmp/bd_resaeu_acteur.sql
+cp data/bd_reseau_acteur.sql /tmp/bd_reseau_acteur.sql
 ```
 2- Connexion with postgres user
 ```
